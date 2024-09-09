@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Loan</title>
+    <style>
+        /* Basic resets and styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #FFD700; /* Gold text */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FFD700; /* Gold color for heading */
+        }
+
+        /* Styling the form container */
+        form {
+            background-color: #1a1a1a; /* Dark gray form background */
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.5); /* Gold shadow */
+            color: #FFD700; /* Gold color for text */
+        }
+
+        /* Label styles */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        /* Input and textarea fields */
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #FFD700; /* Gold border */
+            background-color: #333; /* Dark input background */
+            color: #FFD700; /* Gold text */
+            font-size: 16px;
+        }
+
+        /* Textarea resizing */
+        textarea {
+            resize: vertical;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #FFD700; /* Gold background */
+            color: black; /* Black text on button */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #e6b800; /* Slightly darker gold on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loan Offer Section -->
+    <section id="loan-offer">
+        <h2>Apply for a Loan</h2>
+        <form id="loan-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Loan Amount</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+</body>
+</html>
